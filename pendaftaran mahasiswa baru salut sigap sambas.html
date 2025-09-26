@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Formulir Pendaftaran</title>
+</head>
+<style>
+    label {
+        font-weight: bold;
+    }
+    body{
+        background-image: url(bck.jpeg);
+    }
+</style>
+
+<body>
+    <center>
+        <img src="agh - Copy.jpeg" alt="header" width="1140px" height="290px"
+    </center>
+   <div style="background-color: white" class="container p-3 my-3 border">
+        <h1 class="text-center" style="font-size: 32px; font-weight: 900;">
+            FORM PENDAFTARAN MAHASISWA BARU
+        </h1>
+        <p style="font-size: 14px; color: #555;">
+             PENTING!! teman-teman calon mahasiswa diharapkan mengisi form ini menggunakan huruf kapital semua terkecuali E-Mail.
+        </p>
+        <Form id="form" method="POST" action="https://script.google.com/macros/s/AKfycbzyV3ay4OSvNZzZBZwkUH0mgh_il1T4nU7y0Zktc6GOeCCz2JIU6NmerOyj6pFLls3czg/exec">
+            <div class="alert alert-secondary">
+                <strong>DATA DIRI</strong>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-grup">
+                        <label>Nama Lengkap :</label>
+                        <input type="text" name="Nama Lengkap" class="form-control" placeholder="Masukan Nama Lengkap">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-grup">
+                         <label>Nomor Identitas (Nik) :</label>
+                        <input type="text" name="Nomor Identitas (Nik)" class="form-control" placeholder="Masukan Nomor NIK">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-grup">
+                        <label>Tempat Lahir :</label>
+                        <input type="text" name="Tempat Lahir" class="form-control" placeholder="Masukan Tempat Lahir">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-grup">
+                        <label>Tanggal Lahir :</label>
+                        <input type="date" name="Tanggal Lahir" class="form-control">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-grup">
+                        <label>Status :</label>
+                        <select class="form-control" name=Status>
+                            <option>Pilih</option>
+                            <option value="Belum Menikah">BELUM MENIKAH</option>
+                            <option value="Sudah">SUDAH</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row"></div> 
+                        <div class="col-sm-4">
+                            <div class="form-grup">
+                            <label>Jenis Kelamin :</label>
+                            <br>
+                            <input type="radio" name="Jenis Kelamin" value="Laki-Laki"> LAKI-LAKI
+                            <br>
+                            <input type="radio" name="Jenis Kelamin" value="Perempuan"> PEREMPUAN
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-grup">
+                            <label>Agama :</label>
+                            <select class="form-control" name="Agama">
+                                <option>Pilih</option>
+                                <option value="Islam">ISLAM</option>
+                                <option value="Kristen">KRISTEN</option>
+                                <option value="Katholik">KATHOLIH</option> 
+                                <option value="Hindu">HINDU</option> 
+                                <option value="Budha">BUDDHA</option> 
+                                <option value="Lainnya">LAINNYA</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label>E-Mail :</label>
+                            <input type="email" name="E-Mail" class="form-control" placeholder="Masukkan E-mail Aktif">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-grup">
+                            <label>Nomor Handphone :</label>  
+                            <input type="text" name="Nomor Handphone" class="form-control" placeholder="Contoh: 6285724024002">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-grup">
+                            <label>Nama Ibu Kandung :</label>  
+                            <input type="text" name="Nama Ibu Kandung" class="form-control" placeholder="Masukkan Nama Lengkap">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert alert-secondary">
+                    <strong>DATA ALAMAT DOMISILI</strong>
+                </div>
+                    <div class="row">
+                     <div class="col-sm-8">
+                         <div class="form-grup">
+                            <label>Alamat Rumah :</label>
+                            <input type="text" name="Alamat Rumah" class="form-control" placeholder="cth: DESA NAGUR, DUSUN JAWA, RT001/RW001, NO.33">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                    <div class="form-grup">
+                         <label>Kode Pos :</label>
+                        <input type="text" name="Kode Pos" class="form-control" placeholder="Masukkan Kode">
+                    </div>
+                </div>    
+            </div> 
+            <div class="alert alert-secondary" style="margin-top: 20px;">
+                <strong>PENDIDIKAN TERAKHIR</strong>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-grup">
+                         <label>Sekolah Asal :</label>
+                        <input type="text" name="Sekolah Asal" class="form-control" placeholder="cth: SMKN 1 SAMBAS">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-grup">
+                         <label>Tahun Lulus :</label>
+                        <input type="text" name="Tahun Lulus" class="form-control" placeholder="wajib isi">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="alert alert-secondary" style="margin-top: 20px;">
+                <strong>PILIHAN PROGRAM STUDI</strong>
+            </div>
+                <div class="row"></div> 
+                    <div class="col-sm-4">
+                        <div class="form-grup">
+                        <label>Jalur :</label>
+                        <br>
+                        <input type="radio" name="Jalur" value="RPL"> RPL
+                        <p style="font-size: 14px; color: #555;">
+                            Pengajuan pendaftaran RPL (Penyetaraan) dikenakan biaya Rp450.000,. jika pengajuan tidak disetujui maka  biaya RPL tidak dapat dikembalikan. 
+                        </p>
+                        <br>
+                        <input type="radio" name="Jalur" value="NON RPL"> NON RPL
+                        <p style="font-size: 14px; color: #555;">
+                            Pendaftaran jalur NON RPL mahasiswa dikenakan biaya Rp155.000,. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-grup" style="margin-top: 13px;">
+                        <label style="background-color: #d0e03f; padding: 5px; display: block; font-weight: bold;">
+                            PILIH JURUSAN :
+                        </label>
+                        <select class="form-control" name="JURUSAN">
+                            <option>Pilih</option>
+                            <option value="D4 Kearsipan">D4 Kearsipan</option>
+                            <option value="D3 Perpajakan">D3 Perpajakan</option>
+                            <option value="S1 Ilmu Administrasi Negara">S1 Ilmu Administrasi Negara</option>
+                            <option value="S1 Ilmu Administrasi Bisnis">S1 Ilmu Administrasi Bisnis</option>
+                            <option value="S1 Ilmu Hukum">S1 Ilmu Hukum</option> 
+                            <option value="S1 Ilmu Pemerintahan">S1 Ilmu Pemerintahan</option> 
+                            <option value="S1 Ilmu Komunikasi">S1 Ilmu Komunikasi</option> 
+                            <option value="S1 Ilmu Perpustakaan">S1 Ilmu Perpustakaan</option>
+                            <option value="S1 Ilmu Sosiologi">S1 Ilmu Sosiologi</option> 
+                            <option value="S1 Ilmu Sastra Inggris">S1 Ilmu Sastra Inggris</option> 
+                            <option value="S1 Ilmu Perpajakan">S1 Ilmu Perpajakan</option>
+                            <option value="S1 Statiska">S1 Statiska</option>
+                            <option value="S1 Matematika">S1 Matematika</option>
+                            <option value="S1 Biologi">S1 Biologi</option> 
+                            <option value="S1 Teknologi Pangan">S1 Teknologi Pangan</option> 
+                            <option value="S1 Agribisnis">S1 Agribisnis</option> 
+                            <option value="S1 Perencanaan Wilayah dan Kota">S1 Perencanaan Wilayah dan Kota</option>
+                            <option value="S1 Sistem Informasi">S1 Sistem Informasi</option> 
+                            <option value="S1 Sain Data">S1 Sain Data</option> 
+                            <option value="S1 Pendidikan Bahasa dan Sastra Inggris">S1 Ilmu Administrasi Negara</option>
+                            <option value="S1 Pendidikan Bahasa Inggris">S1 Ilmu Administrasi Bisnis</option>
+                            <option value="S1 Pendidikan Biologi">S1 Ilmu Hukum</option> 
+                            <option value="S1 Pendidikan Fisika">S1 Ilmu Pemerintahan</option> 
+                            <option value="S1 Pendidikan Kimia">S1 Ilmu Komunikasi</option> 
+                            <option value="S1 Pendidikan Matemarika">S1 Ilmu Perpustakaan</option>
+                            <option value="S1 Pendidikan Ekonomi">S1 Ilmu Sosiologi</option> 
+                            <option value="S1 Pendidikan Pancasila dan Kewarganegaraan">S1 Ilmu Sastra Inggris</option> 
+                            <option value="S1 Pendidikan Teknologi Pendidikan">S1 Ilmu Perpajakan</option>
+                            <option value="S1 Pendidikan Agama Islam">S1 Ilmu Perpustakaan</option>
+                            <option value="S1 Pendidikan Guru Sekolah Dasar (PGSD)">S1 Ilmu Sosiologi</option> 
+                            <option value="S1 Pendidikan Guru Pendidik Anak Usia Dini (PGPAUD)">S1 Ilmu Sastra Inggris</option> 
+                            <option value="Magister Studi Lingkungan">Magister Studi Lingkungan</option>
+                            <option value="Magister Manajemen Perikanan">Magister Manajemen Perikanan</option>
+                            <option value="Magister Administrasi Publik">Magister Administrasi Publik</option> 
+                            <option value="Magister Manajemen">Magister Manajemen</option> 
+                            <option value="Magister Pendidikan Bahasa Inggris">Magister Pendidikan Bahasa Inggris</option> 
+                            <option value="Magister Pendidikan Matematika">Magister Pendidikan Matematika</option> 
+                            <option value="Magister Pendidikan Dasar">Magister Pendidikan Dasar</option> 
+                        </select>
+                     </div>
+
+                <center style="margin-top: 20px;">
+                <button type="reset" name="reset" class="btn btn-secondary">Reset</button>
+                <button type="submit" name="submit" class="btn btn-primary">Daftar</button>
+            </center>
+        </Form>
+    </div>
+    <center style="margin-top: 30px;">
+        <div style="background-color: black;" class="container p-3 my-3 border">
+            <h5 style="color: white;" class="text-center"> Hajar Solihah ~ Copyright &2409 *2025 Powered by Visual Studio Code</h5>
+        </div>
+    </center>
+</body>
+
+</html>
